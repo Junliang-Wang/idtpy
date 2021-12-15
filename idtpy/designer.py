@@ -1,6 +1,5 @@
 from itertools import islice
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 from idtpy import model
