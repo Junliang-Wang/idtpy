@@ -4,16 +4,28 @@
 
 [comment]: <> ([![Downloads]&#40;https://img.shields.io/github/downloads/nextnanopy/nextnanopy/total&#41;]&#40;https://github.com/nextnanopy/nextnanopy/releases&#41;)
 
-`idtpy` is a simple Python package for the design and modelling of Interdigital Transducers (IDTs).
+`idtpy` is a user-friendly Python package for **Interdigital Transducers (IDTs)**. 
+Our goal is to **simplify the design process** by focusing in physical parameters (e.g. resonant frequency) and providing 
+**simple modelling tools** to predict the transducer response, both in the frequency and in the time domain.
 
-IDTs are widely used in telecommunication industries as filters or delay lines. 
+`idtpy` further allows **exporting easily the IDT design** to a common CAD format, GDSII, thus it smoothly integrates with
+standard fabrication processes.
+
+Currently, the **available IDT designs** are:
+- **Regular IDT**: standard and uniform design.
+- **Exponential Chirp IDT**: non-uniform design. See Junliang Wang et al. XXX (2022)
+- **Linear Chirp IDT**: non-uniform design. See Junliang Wang et al. XXX (2022)
+- **Split52 IDT**: generation of higher harmonics. See Florian Schulein et al. Nature Nanotechnology (2015)
+- **Dart IDT**: unidirectional SAW emission. See Etienne Dumur et al. Applied Physics Letters (2019) 
+
+## What is an Interdigital Transducer (IDT)?
+IDTs are widely used in telecommunication industries as filters or delay lines, and recently also found its applications
+in quantum technologies.
 It is composed by surface metallic electrodes deposited on a piezoelectric substrate.
 Applying an oscillating input signal, a surface acoustic wave (SAW) is generated thanks to the piezoelectric coupling.
 The properties of this emitted SAW is determined by the design of the electrodes.
-Changing the unit cell pattern allows for instance extension in the frequency band response (chirp IDT), unidirectional emission (Dart IDT) or generation of higher harmonics (Split 52 IDT).
-
-The goal of `idtpy` is to become a user-friendly tool to work with IDTs, covering from the design process with physical parameters
-to simple modelling of the transducer response.
+Changing the unit cell pattern allows for instance extension in the frequency band response (chirp IDT), 
+unidirectional emission (Dart IDT) or generation of higher harmonics (Split 52 IDT).
 
 ## Cite
 If you use `idtpy` in any scientific publication, please, cite it as XXX.
@@ -21,16 +33,16 @@ If you use `idtpy` in any scientific publication, please, cite it as XXX.
 ## Installation
 ### Requirements
 
-You need a working Python 3.8 installation to be able to use `idtpy`. 
+You need a working Python installation to be able to use `idtpy`. 
 We highly recommend installing Anaconda which takes care of installing Python and managing packages. 
-Make sure to download a Python version equal or higher than 3.8.
+Make sure to download Python 3.8 or later.
 
 ### Dependencies:
 
 * [Python](https://www.python.org/) (tested with 3.8)
 * [NumPy](http://numpy.scipy.org/) - `conda install numpy`
-* [Gdspy](https://gdspy.readthedocs.io/) (optional: to import gds files) - `pip install gdspy`
-* [Matplotlib](https://matplotlib.org/) (optional: to visualize imported polygons) - `conda install matplotlib`
+* [Gdspy](https://gdspy.readthedocs.io/) (optional: to generate gds files) - `pip install gdspy`
+* [Matplotlib](https://matplotlib.org/) (optional: to visualize IDTs) - `conda install matplotlib`
 
 ### Linux / OS X / Windows
 
@@ -54,7 +66,7 @@ python setup.py install
 ```
 
 ## Examples
-More examples can be found in the folder ['examples'](https://github.com/Junliang-Wang/idtpy/examples).
+More examples can be found in the folder ['examples'](https://github.com/Junliang-Wang/idtpy/tree/main/examples).
 
 ### Create an IDT
 ```python
