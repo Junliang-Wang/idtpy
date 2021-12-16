@@ -180,5 +180,5 @@ dart = designer.Dart(
 ```
 ![](readme_images/fig8_idt.png)
 
-### Version 0.1.0 (Month day-th, 2021)
+### Version 0.1.0 (December 16th, 2021)
 * Initial release
