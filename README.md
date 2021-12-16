@@ -180,5 +180,15 @@ dart = designer.Dart(
 ```
 ![](readme_images/fig8_idt.png)
 
+### Export to GDS
+```python
+from idtpy import GdsAssistant
+idt = designer.Regular(freq=2.77,vsaw=2.77,Np=40,w=30,l=50,Nehp=2,tfact=[0.8,0.64,20])
+gds = GdsAssistant('library')
+top = gds.new_cell('top')
+top.add(gds.get_gds_polygons(idt,layer=0))
+gds.save('idt.gds')
+```
+
 ### Version 0.1.0 (December 16th, 2021)
 * Initial release
