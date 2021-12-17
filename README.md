@@ -39,10 +39,12 @@ Make sure to download Python 3.8 or later.
 
 ### Dependencies:
 
-* [Python](https://www.python.org/) (tested with 3.8)
-* [NumPy](http://numpy.scipy.org/) - `conda install numpy`
-* [Gdspy](https://gdspy.readthedocs.io/) (optional: to generate gds files) - `pip install gdspy`
-* [Matplotlib](https://matplotlib.org/) (optional: to visualize IDTs) - `conda install matplotlib`
+* [Python](https://www.python.org/) - tested with 3.8
+* [NumPy](https://numpy.org/) - `conda install numpy`
+* [SciPy](https://scipy.org/) - `conda install scipy`
+* [Matplotlib](https://matplotlib.org/) - `pip install matplotlib` or `conda install matplotlib`
+* [Gdspy](https://gdspy.readthedocs.io/) - `pip install gdspy` or `conda install -c conda-forge gdspy`
+
 
 ### Linux / OS X / Windows
 

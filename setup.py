@@ -11,6 +11,8 @@ Simple Python package for the design and modelling of Interdigital Transducers (
 """
 
 extras = {
+    'numpy': ('numpy', '1.18', 'conda'),
+    'scipy': ('scipy', '1.7', 'conda'),
     'gdspy': ('gdspy', '1.6', 'pip'),
     'matplotlib': ('matplotlib', '3.2', 'conda'),
 }
@@ -18,6 +20,7 @@ extras_require = {k: '>='.join(v[0:2]) for k, v in extras.items()}
 
 install_requires = [
     'numpy>=1.18',
+    'scipy>=1.7',
 ]
 
 setuptools.setup(
